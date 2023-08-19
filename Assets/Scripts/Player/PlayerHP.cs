@@ -18,7 +18,7 @@ public class PlayerHP : MonoBehaviour
     private void Update()
     {
         if (_hp <= 0)
-            Destroy(gameObject);
+            gameObject.SetActive(false);
     }
 
     public void GetDamage(float damage)

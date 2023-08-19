@@ -27,7 +27,6 @@ public class PlayerHPDisplay : MonoBehaviour
 
     private void Update()
     {
-        print(_hp + "   " + _maxHP);
         _healthBarFilling.fillAmount = _hp / _maxHP;
         _HPText.text = _hp.ToString();
     }
